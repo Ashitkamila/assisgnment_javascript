@@ -1,0 +1,21 @@
+#cardBackground
+{
+    background-color: rgb(10, 154, 238);
+    color: cyan
+}
+#subjectSpan
+{
+    margin-left: 150px;
+}
+#genderSpan
+{
+    margin-left: 150px;
+}
+#termsSpan
+{
+    margin-left: 150px;
+}
+div .last
+{
+    margin-left: 20px;
+}

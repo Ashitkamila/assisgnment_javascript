@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let exampleDate=new Date('Sep 12 2020')
+        let updatedDate=exampleDate.toLocaleDateString('en-US',{
+            weekday:"short",
+            month:"short",
+            day:"2-digit",
+            year:"numeric"
+        })
+
+        console.log(updatedDate);
+
+
+
+let questionDate=new Date('Sep 12 2020')
+let questionGetingDate=questionDate.getDate();
+let questionGetingDay=questionDate.getDay();
+let questionGettingYear=questionDate.getFullYear();
+let questionGettingMonth=questionDate.getMonth();
+
+let month=['Jan', 'Feb', 'Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+let weekday=['Sun','Mon','Tue','Wed','Thu','Fri','Sat']
+
+console.log(`${weekday[questionGetingDay]}, ${month[questionGettingMonth]} ${questionGetingDate} ${questionGettingYear}`);
+
+
+
+
+    </script>
+</body>
+</html>
